@@ -1,0 +1,3 @@
+C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/ListasApuntadores/cmake-build-debug/CMakeFiles/ListasApuntadores.dir
+C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/ListasApuntadores/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/luax2/Documents/3 sem/Memoria/Parcial 1/ListasApuntadores/cmake-build-debug/CMakeFiles/rebuild_cache.dir
