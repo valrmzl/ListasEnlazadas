@@ -75,27 +75,32 @@ int removeNode(List *list)
 
 }
 
+
+
 int removeElement(List* list, int value)
 {
-
-    Node *tmp=list->inicio;
-    int totalBorrados=0;
-    //checar si el elemento a eliminar es el primero
-    if(tmp->content==value)
+    Node *pre = list->inicio;
+    Node *actual = list->inicio;
+    int elementosBorrados = 0;
+    while(actual != NULL)
     {
-        //es el mismo codigo que el de removeNode
-        totalBorrados++;
-        list->inicio=list->inicio->next;
-    }
-
-    while(tmp!=NULL)
-    {
-        if(tmp->next!=NULL && tmp->next->content==value)
+        if(actual->content == value)
         {
-            tmp->next=tmp->next->next;
-            totalBorrados++;
+            pre->next = actual->next;
+            if(actual == list->inicio) //cuando es el primer nodo
+            {
+                pre = pre->next;
+                list->inicio = pre;
+            }
+            Node *nodetodelete = actual;
+            actual = actual->next;
+            elementosBorrados++;
+            free(nodetodelete);
         }
-        tmp=tmp->next;
+        else{
+            pre = actual;
+            actual = actual->next;
+        }
     }
-    return totalBorrados;
+    return elementosBorrados;
 }

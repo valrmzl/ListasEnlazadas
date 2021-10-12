@@ -28,13 +28,13 @@ int main() {
     add(listaPrueba2,5);
     add(listaPrueba2,4);
     add(listaPrueba2,5);
-    add(listaPrueba2,0);
+    add(listaPrueba2,4);
     add(listaPrueba2,5);
     add(listaPrueba2,3);
     add(listaPrueba2,7);
     add(listaPrueba2,10);
     add(listaPrueba2,5);
-    add(listaPrueba2,8);
+    add(listaPrueba2,5);
     displayList(listaPrueba2);
     printf("quiero eliminar todos los 5\n");
     int borrados2=removeElement(listaPrueba2,5);
